@@ -19,7 +19,13 @@ angular.module('assessment', ['ui.router'])
             })
             .state('shop', {
                 url: '/shop',
-                templateUrl: './../views/shop.html'
+                templateUrl: './../views/shop.html',
+                controller: 'shopCtrl'
             })
+            .state('test', {
+                url: '/test',
+                templateUrl: './../views/product-tmpl.html',
+                controller: 'shopCtrl'
+            });
 
     });
