@@ -22,7 +22,7 @@
         <!--Title click Should redirect to the product-details section. remember to pass along the product id so you can make an api call
         to get the specific product details-->
         <h3 class="product-grid__name ">
-            <a>
+            <a ui-sref="details({ id: item.id })">
                 <!--Title-->
                 {{ item.title }}
             </a>

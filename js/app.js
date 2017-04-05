@@ -26,6 +26,10 @@ angular.module('assessment', ['ui.router'])
                 url: '/test',
                 templateUrl: './../views/product-tmpl.html',
                 controller: 'shopCtrl'
+            })
+            .state('details', {
+                url: '/details/:id',
+                templateUrl: './../views/product-details.html',
+                controller: 'productDetailsCtrl'
             });
-
     });
